@@ -15,7 +15,7 @@ jobs:
     - name: Build Kernel
       uses: rifsxd/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
+          kernel-url: https://github.com/realme-kernel-opensource/realme_C31_C33_C35_narzo50A-Prime-AndroidT-kernel-source
           kernel-dir: realme_C35
           kernel-branch: master
           config: sprd_qogirl6_defconfig
