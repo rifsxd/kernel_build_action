@@ -27,5 +27,5 @@ jobs:
           android-version: 12
           aosp-clang-version: r416183b
           python-27: true
-          disable-lto: false
+          disable-lto: true
           anykernel3: true
