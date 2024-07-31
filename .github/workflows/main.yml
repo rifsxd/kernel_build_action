@@ -30,7 +30,7 @@ jobs:
           kernel-branch: master
           config: unisoc_fuzz_ums512_defconfig
           arch: arm64
-          aosp-gcc: false
+          aosp-gcc: true
           aosp-clang: true
           ksu: false
           ksu-version: main
