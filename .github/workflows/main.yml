@@ -25,9 +25,9 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/rifsxd/realme_C31_C33_C35_narzo50A-Prime-AndroidT-NEW-kernel-source
+          kernel-url: https://github.com/rifsxd/android_kernel_realme_RMX3511
           kernel-dir: realme_C35
-          kernel-branch: master
+          kernel-branch: ksu
           config: unisoc_fuzz_ums512_defconfig
           arch: arm64
           aosp-gcc: true
