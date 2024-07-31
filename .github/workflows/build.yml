@@ -15,17 +15,17 @@ jobs:
     - name: Build Kernel
       uses: rifsxd/kernel_build_action@main
       with:
-          kernel-url: https://github.com/realme-kernel-opensource/realme_C31_C33_C35_narzo50A-Prime-AndroidT-NEW-kernel-source
+          kernel-url: https://github.com/rifsxd/realme_C31_C33_C35_narzo50A-Prime-AndroidT-NEW-kernel-source
           kernel-dir: realme_C35
           kernel-branch: master
           config: unisoc_fuzz_ums512_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: false
+          ksu: true
           ksu-version: main
           android-version: 12
           aosp-clang-version: r416183b
           python-27: true
-          disable-lto: false
-          anykernel3: false
+          disable-lto: true
+          anykernel3: true
