@@ -20,12 +20,12 @@ jobs:
           kernel-branch: master
           config: unisoc_fuzz_ums512_defconfig
           arch: arm64
-          aosp-gcc: true
+          aosp-gcc: false
           aosp-clang: true
-          ksu: true
+          ksu: false
           ksu-version: main
           android-version: 12
           aosp-clang-version: r416183b
           python-27: true
-          disable-lto: true
-          anykernel3: true
+          disable-lto: false
+          anykernel3: false
