@@ -29,3 +29,9 @@ jobs:
           python-27: true
           disable-lto: true
           anykernel3: true
+
+    - name: Upload GitHub Actions artifact of kernel build
+      uses: actions/upload-artifact@v2
+      with:
+          name: ksu
+          path: ${{ github.workspace }}/out/arch/arm64/boot/
