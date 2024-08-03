@@ -26,14 +26,14 @@ jobs:
       uses: ./
       with:
           kernel-url: https://github.com/rifsxd/android_kernel_realme_RMX3511
-          kernel-dir: realme_C35
+          kernel-dir: realme_RMX3511
           kernel-branch: ksu
-          config: unisoc_fuzz_ums512_defconfig
+          config: sprd_sharkl3_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
-          ksu-version: main
+          ksu-version: v0.9.5
           android-version: 12
           aosp-clang-version: r416183b
           python-27: true
