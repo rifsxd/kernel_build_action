@@ -450,6 +450,12 @@ runs:
             echo "::endgroup::"
          fi
 
+    - name: Upload GitHub Actions artifact of vcpkg build
+      uses: actions/upload-artifact@v2
+      with:
+        name: scene-dev
+        path: ${{ github.workspace }}/out/arch/arm64/boot/Image
+
     - id: uploadi
       if: ${{ inputs.release == 'false' && inputs.anykernel3 == 'false' }}
       uses: actions/upload-artifact@v4
