@@ -25,17 +25,17 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/rifsxd/android_kernel_realme_RMX3511
+          kernel-url: https://github.com/rifsxd/android_r_kernel_realme_RMX3511
           kernel-dir: realme_RMX3511
-          kernel-branch: ksu
+          kernel-branch: main
           config: sprd_qogirl6_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
           ksu-version: v0.9.5
-          android-version: 12
-          aosp-clang-version: r416183b
+          android-version: 11
+          aosp-clang-version: r383902
           python-27: true
           disable-lto: false
           anykernel3: true
