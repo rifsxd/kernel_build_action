@@ -17,7 +17,7 @@ jobs:
       with:
           kernel-url: https://github.com/rifsxd/android_r_kernel_realme_RMX3511
           kernel-dir: realme_RMX3511
-          kernel-branch: master
+          kernel-branch: ksu
           config: sprd_qogirl6_defconfig
           arch: arm64
           aosp-gcc: true
