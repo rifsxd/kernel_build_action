@@ -22,10 +22,10 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: false
+          ksu: true
           ksu-version: v0.9.5
-          android-version: 11
-          aosp-clang-version: r383902
+          android-version: 12
+          aosp-clang-version: r416183b
           python-27: true
           disable-lto: false
           anykernel3: true
