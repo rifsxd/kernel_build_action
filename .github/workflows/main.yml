@@ -27,7 +27,7 @@ jobs:
       with:
           kernel-url: https://github.com/rifsxd/android_t_kernel_realme_RMX3511
           kernel-dir: realme_RMX3511
-          kernel-branch: ksu
+          kernel-branch: dev
           config: RMX3511_defconfig
           arch: arm64
           aosp-gcc: true
@@ -36,5 +36,5 @@ jobs:
           ksu-version: v0.9.5
           android-version: 12
           aosp-clang-version: r416183b
-          disable-lto: true
+          disable-lto: false
           anykernel3: true
