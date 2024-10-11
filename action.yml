@@ -450,10 +450,10 @@ runs:
 
             if [ -f out/arch/${{ inputs.arch }}/boot/Image.*-dtb ]; then
                 cp out/arch/${{ inputs.arch }}/boot/Image.*-dtb AnyKernel3/ -rv
-            elif [ -f out/arch/${{ inputs.arch }}/boot/Image.* ]; then
-                cp out/arch/${{ inputs.arch }}/boot/Image.* AnyKernel3/ -rv
+            elif [ -f out/arch/${{ inputs.arch }}/boot/Image.*-dtb ]; then
+                cp out/arch/${{ inputs.arch }}/boot/Image.*-dtb AnyKernel3/ -rv
             else
-                cp out/arch/${{ inputs.arch }}/boot/Image AnyKernel3/ -rv
+                cp out/arch/${{ inputs.arch }}/boot/Image.*-dtb AnyKernel3/ -rv
             fi
 
             test -f out/arch/${{ inputs.arch }}/boot/dtbo.img && cp -v out/arch/${{ inputs.arch }}/boot/dtbo.img AnyKernel3/
