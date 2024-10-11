@@ -448,12 +448,12 @@ runs:
                 sed -i 's/is_slot_device=0;/IS_SLOT_DEVICE=auto;/g' AnyKernel3/anykernel.sh
             fi
 
-            if [ -f out/arch/${{ inputs.arch }}/boot/Image.*-dtb ]; then
-                cp out/arch/${{ inputs.arch }}/boot/Image.*-dtb AnyKernel3/ -rv
-            elif [ -f out/arch/${{ inputs.arch }}/boot/Image.*-dtb ]; then
-                cp out/arch/${{ inputs.arch }}/boot/Image.*-dtb AnyKernel3/ -rv
+            if [ -f out/arch/${{ inputs.arch }}/boot/* ]; then
+                cp out/arch/${{ inputs.arch }}/boot/* AnyKernel3/ -rv
+            elif [ -f out/arch/${{ inputs.arch }}/boot/* ]; then
+                cp out/arch/${{ inputs.arch }}/boot/* AnyKernel3/ -rv
             else
-                cp out/arch/${{ inputs.arch }}/boot/Image.*-dtb AnyKernel3/ -rv
+                cp out/arch/${{ inputs.arch }}/boot/* AnyKernel3/ -rv
             fi
 
             test -f out/arch/${{ inputs.arch }}/boot/dtbo.img && cp -v out/arch/${{ inputs.arch }}/boot/dtbo.img AnyKernel3/
