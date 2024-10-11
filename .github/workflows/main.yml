@@ -38,3 +38,13 @@ jobs:
           aosp-clang-version: r416183b
           disable-lto: false
           anykernel3: true
+
+    - name: Zip Kernel Boot Files
+      run: |
+        zip -r kernel_boot_files.zip out/arch/arm64/boot/
+
+    - name: Upload Kernel Boot Files
+      uses: actions/upload-artifact@v3
+      with:
+        name: kernel-boot-files
+        path: kernel_boot_files.zip
